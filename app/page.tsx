@@ -206,22 +206,22 @@ export default function HomePage() {
       </section>
 
       {/* Section 2 - Standardized Framework with Visual Structure */}
-      <section id="standardized-framework" className="py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#0d2825] to-[#0a1f1a] relative overflow-hidden">
+      <section id="standardized-framework" className="py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
         {/* Background decorations */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-[#17c641]/5 to-transparent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-bl from-[#02624c]/5 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-[#17c641]/10 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-bl from-[#02624c]/10 to-transparent rounded-full blur-3xl"></div>
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
             <div className="animate-slide-in-left" style={{ animationDelay: "0.2s" }}>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#17c641] to-[#02624c] bg-clip-text text-transparent mb-8 text-balance leading-[1.1]">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-8 text-balance leading-[1.1]">
                 Accelerate capital deployment with a standardized framework
               </h2>
 
-              <p className="text-xl text-gray-300 leading-relaxed font-light mb-8">
+              <p className="text-xl text-slate-600 leading-relaxed font-light mb-8">
                 RIAs face long approval cycles for unfamiliar investment products. Sylvan structures every investment
                 around existing income producing real estate held in ring fenced SPVs with predefined assets and cash
                 flows. Approve our framework once, then deploy capital into multiple assets without analysing a new
@@ -243,21 +243,22 @@ export default function HomePage() {
 
             {/* Right - Enhanced Structure Diagram */}
             <div className="animate-slide-in-right" style={{ animationDelay: "0.3s" }}>
-              <Card className="bg-gradient-to-br from-[#0d2825] to-[#0a1f1a] border-2 border-[#17c641]/30 p-8 shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(23,198,65,0.3)] transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group cursor-pointer">
+              <Card className="bg-white border-2 border-slate-200 p-8 shadow-2xl hover:shadow-3xl hover:border-[#17c641]/50 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group cursor-pointer">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#17c641]/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="text-center mb-8 relative z-10">
-                  <h3 className="text-2xl font-bold text-[#17c641] mb-3">STRUCTURE</h3>
-                  <Badge variant="outline" className="border-[#17c641] text-[#17c641] animate-shimmer bg-[#17c641]/10">
+                  <h3 className="text-2xl font-bold text-[#02624c] mb-3">STRUCTURE</h3>
+                  <Badge variant="outline" className="border-[#02624c] text-[#02624c] animate-shimmer">
                     BLUEPRINT
                   </Badge>
                 </div>
 
                 <div className="space-y-4 relative z-10">
                   {/* Senior Debt */}
-                  <div className="bg-blue-500/10 border-2 border-blue-400/40 rounded-xl p-5 relative hover:border-blue-400/60 hover:bg-blue-500/15 transition-all duration-300 group/item cursor-pointer">
+                  <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-5 relative hover:border-blue-300 hover:bg-blue-100/50 transition-all duration-300 group/item cursor-pointer">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-bold text-blue-300 uppercase">Senior Debt</span>
+                      <span className="text-sm font-bold text-blue-900 uppercase">Senior Debt</span>
+                      <Badge className="bg-blue-600 hover:bg-blue-700 text-white">First Position</Badge>
                       <Badge className="bg-blue-500/50 hover:bg-blue-600/60 text-blue-100 border border-blue-400/50">First Position</Badge>
                     </div>
                     <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 z-20">
@@ -268,13 +269,13 @@ export default function HomePage() {
                   </div>
 
                   {/* Sylvan Note */}
-                  <div className="bg-[#17c641]/10 border-2 border-[#17c641]/40 rounded-xl p-5 relative mt-8 hover:border-[#17c641]/60 hover:bg-[#17c641]/15 transition-all duration-300 group/item cursor-pointer">
+                  <div className="bg-[#17c641]/10 border-2 border-[#17c641]/30 rounded-xl p-5 relative mt-8 hover:border-[#17c641]/50 hover:bg-[#17c641]/15 transition-all duration-300 group/item cursor-pointer">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-bold text-[#17c641] uppercase flex items-center gap-2">
+                      <span className="text-sm font-bold text-[#02624c] uppercase flex items-center gap-2">
                         <CheckCircle className="w-5 h-5 animate-pulse" />
                         Sylvan Note
                       </span>
-                      <Badge className="bg-[#17c641]/50 hover:bg-[#17c641]/60 text-white font-semibold border border-[#17c641]/40">12-14% Mezzanine</Badge>
+                      <Badge className="bg-[#17c641] hover:bg-[#02624c] text-white font-semibold">12-14% Mezzanine</Badge>
                     </div>
                     <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 z-20">
                       <div className="w-10 h-10 bg-[#0a1f1a] border-2 border-[#02624c] rounded-full flex items-center justify-center shadow-lg group-hover/item:shadow-xl transition-all duration-300">
@@ -286,8 +287,8 @@ export default function HomePage() {
                   {/* Developer Equity */}
                   <div className="bg-[#707573]/10 border-2 border-[#707573]/30 rounded-xl p-5 mt-8 hover:border-[#707573]/50 hover:bg-[#707573]/15 transition-all duration-300 group/item cursor-pointer">
                     <div className="flex items-center justify-between">
-                      <span className="text-sm font-bold text-gray-300 uppercase">Dev Equity</span>
-                      <Badge className="bg-[#707573]/50 hover:bg-[#707573]/60 text-white font-semibold border border-[#707573]/40">First Loss</Badge>
+                      <span className="text-sm font-bold text-slate-700 uppercase">Dev Equity</span>
+                      <Badge className="bg-[#707573] hover:bg-slate-600 text-white font-semibold">First Loss</Badge>
                     </div>
                   </div>
 
@@ -410,7 +411,7 @@ export default function HomePage() {
       </section>
 
       {/* Section 4 - Established Rental Yields with Performance Chart */}
-      <section id="rental-yields" className="py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#0d2825] to-[#0a1f1a] relative overflow-hidden">
+      <section id="rental-yields" className="py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
         {/* Background decorations */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute top-0 right-1/4 w-96 h-96 bg-gradient-to-bl from-[#17c641]/5 to-transparent rounded-full blur-3xl"></div>
@@ -421,11 +422,11 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
             <div className="animate-slide-in-left" style={{ animationDelay: "0.2s" }}>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#17c641] to-[#02624c] bg-clip-text text-transparent mb-8 text-balance leading-[1.1]">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-8 text-balance leading-[1.1]">
                 Access established rental yields without ownership risk
               </h2>
 
-              <p className="text-xl text-gray-300 leading-relaxed font-light mb-10">
+              <p className="text-xl text-slate-600 leading-relaxed font-light mb-10">
                 RIAs can bypass the volatility of developer equity by participating in standardized debt issuance on
                 existing properties. You are buying into proven rental yields rather than betting on the operational
                 success of a developer. You get direct exposure to the performance of the real estate asset itself with a
@@ -434,7 +435,7 @@ export default function HomePage() {
 
               {/* Stats Cards */}
               <div className="space-y-4 mb-10">
-                <div className="bg-[#17c641]/20 border border-[#17c641]/40 rounded-xl p-6 hover:border-[#17c641]/60 hover:bg-[#17c641]/25 transition-all duration-300">
+                <div className="bg-[#17c641]/10 border border-[#17c641]/30 rounded-xl p-6 hover:border-[#17c641]/60 hover:bg-[#17c641]/15 transition-all duration-300">
                   <div className="flex items-center gap-4">
                     <TrendingUp className="w-8 h-8 text-[#17c641]" />
                     <div>
@@ -469,15 +470,15 @@ export default function HomePage() {
 
             {/* Right - Performance Chart */}
             <div className="animate-slide-in-right" style={{ animationDelay: "0.3s" }}>
-              <Card className="bg-gradient-to-br from-[#0d2825] to-[#0a1f1a] border-2 border-[#17c641]/30 p-8 shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(23,198,65,0.3)] transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group cursor-pointer">
+              <Card className="bg-white border-2 border-slate-200 p-8 shadow-2xl hover:shadow-3xl hover:border-[#02624c]/50 transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group cursor-pointer">
                 <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#17c641]/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                 <div className="text-center mb-8 relative z-10">
-                  <div className="inline-flex items-center gap-3 mb-3 bg-[#17c641]/20 px-4 py-2 rounded-full border border-[#17c641]/40">
-                    <TrendingUp className="w-6 h-6 text-[#17c641]" />
-                    <h3 className="text-2xl font-bold text-[#17c641]">PERFORMANCE</h3>
+                  <div className="inline-flex items-center gap-3 mb-3 bg-[#02624c]/10 px-4 py-2 rounded-full border border-[#02624c]/30">
+                    <TrendingUp className="w-6 h-6 text-[#02624c]" />
+                    <h3 className="text-2xl font-bold text-[#02624c]">PERFORMANCE</h3>
                   </div>
-                  <Badge variant="outline" className="border-[#17c641] text-[#17c641] bg-[#17c641]/10">
+                  <Badge variant="outline" className="border-[#02624c] text-[#02624c]">
                     YIELD ANALYSIS
                   </Badge>
                 </div>
@@ -485,8 +486,8 @@ export default function HomePage() {
                 <div className="space-y-6 relative z-10">
                   <div>
                     <div className="flex justify-between items-center mb-3">
-                      <span className="text-sm font-bold text-gray-300">Consistent Yield</span>
-                      <span className="text-lg font-bold text-[#17c641]">9.2%</span>
+                      <span className="text-sm font-bold text-slate-700">Consistent Yield</span>
+                      <span className="text-lg font-bold text-[#02624c]">9.2%</span>
                     </div>
                     <div className="w-full bg-[#02624c]/50 rounded-full h-3">
                       <div className="bg-gradient-to-r from-[#02624c] to-[#17c641] h-3 rounded-full" style={{ width: "92%" }}></div>
@@ -495,8 +496,8 @@ export default function HomePage() {
 
                   <div>
                     <div className="flex justify-between items-center mb-3">
-                      <span className="text-sm font-bold text-gray-300">Projected Return</span>
-                      <span className="text-lg font-bold text-[#17c641]">10.8%</span>
+                      <span className="text-sm font-bold text-slate-700">Projected Return</span>
+                      <span className="text-lg font-bold text-[#02624c]">10.8%</span>
                     </div>
                     <div className="w-full bg-[#02624c]/50 rounded-full h-3">
                       <div className="bg-gradient-to-r from-[#02624c] to-[#17c641] h-3 rounded-full" style={{ width: "108%" }}></div>
@@ -505,16 +506,16 @@ export default function HomePage() {
 
                   <div>
                     <div className="flex justify-between items-center mb-3">
-                      <span className="text-sm font-bold text-gray-300">Historical Average</span>
-                      <span className="text-lg font-bold text-[#17c641]">9.8%</span>
+                      <span className="text-sm font-bold text-slate-700">Historical Average</span>
+                      <span className="text-lg font-bold text-[#02624c]">9.8%</span>
                     </div>
                     <div className="w-full bg-[#02624c]/50 rounded-full h-3">
                       <div className="bg-gradient-to-r from-[#02624c] to-[#17c641] h-3 rounded-full" style={{ width: "98%" }}></div>
                     </div>
                   </div>
 
-                  <div className="pt-6 mt-6 border-t border-[#17c641]/20">
-                    <p className="text-xs text-gray-400 text-center font-medium">
+                  <div className="pt-6 mt-6 border-t border-[#02624c]/20">
+                    <p className="text-xs text-slate-600 text-center font-medium">
                       Past performance is not indicative of future results
                     </p>
                   </div>
