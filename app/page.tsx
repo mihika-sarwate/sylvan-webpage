@@ -33,7 +33,7 @@ export default function HomePage() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
       <style>{`
         @keyframes gradientShift {
           0%, 100% { background-position: 0% 50%; }
@@ -105,17 +105,17 @@ export default function HomePage() {
       <section id="hero" className="relative pt-40 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-[#008929]/5 to-transparent rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-[#095520]/5 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-amber-500/10 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-br from-blue-500/10 to-transparent rounded-full blur-3xl"></div>
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-slate-900 mb-8 text-balance leading-[1.15] tracking-tight animate-float-up" style={{ animationDelay: "0s" }}>
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-amber-200 via-amber-100 to-blue-100 bg-clip-text text-transparent mb-8 text-balance leading-[1.15] tracking-tight animate-float-up" style={{ animationDelay: "0s" }}>
               Structured real estate exposure simplified for RIAs
             </h1>
 
-            <p className="text-lg sm:text-xl lg:text-2xl text-slate-600 mb-12 max-w-4xl mx-auto leading-relaxed font-light animate-float-up" style={{ animationDelay: "0.2s" }}>
+            <p className="text-lg sm:text-xl lg:text-2xl text-slate-300 mb-12 max-w-4xl mx-auto leading-relaxed font-light animate-float-up" style={{ animationDelay: "0.2s" }}>
               Sylvan delivers structured real estate exposure through pre-approved, ring fenced SPVs with lockbox
               governed rental cash distributions. All of which provides RIAs a faster and more controlled path to real
               estate income.
@@ -125,7 +125,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 asChild
-                className="bg-gradient-to-br from-[#095520] to-[#008929] hover:from-[#008929] hover:to-[#095520] text-white text-lg px-12 py-7 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,137,41,0.4)] transition-all duration-500 hover:scale-110 font-semibold rounded-xl group relative overflow-hidden"
+                className="bg-gradient-to-br from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 text-lg px-12 py-7 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(217,119,6,0.6)] transition-all duration-500 hover:scale-110 font-semibold rounded-xl group relative overflow-hidden"
               >
                 <Link href="/listings" className="flex items-center gap-2 relative">
                   <span>View Current Listings</span>
@@ -136,7 +136,7 @@ export default function HomePage() {
           </div>
 
           {/* Featured Deal Card */}
-          <Card className="max-w-5xl mx-auto overflow-hidden border-2 border-slate-200 hover:border-[#008929] transition-all duration-700 hover:shadow-2xl hover:-translate-y-2 animate-float-up cursor-pointer group" style={{ animationDelay: "0.6s" }}>
+          <Card className="max-w-5xl mx-auto overflow-hidden border-2 border-amber-500/30 hover:border-amber-400/60 transition-all duration-700 hover:shadow-[0_25px_50px_-12px_rgba(217,119,6,0.3)] hover:-translate-y-2 animate-float-up cursor-pointer group bg-gradient-to-br from-slate-800 to-slate-900" style={{ animationDelay: "0.6s" }}>
             <div className="grid md:grid-cols-2 gap-0">
               {/* Image Side */}
               <div className="relative h-80 md:h-auto bg-slate-100 overflow-hidden">
@@ -145,7 +145,7 @@ export default function HomePage() {
                   alt="The Highland Residences"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <Badge className="absolute top-4 left-4 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-4 py-2 shadow-lg">
+                <Badge className="absolute top-4 left-4 bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold px-4 py-2 shadow-lg">
                   ACTIVE
                 </Badge>
               </div>
@@ -217,22 +217,22 @@ export default function HomePage() {
       </section>
 
       {/* Section 2 - Standardized Framework with Visual Structure */}
-      <section id="standardized-framework" className="py-32 px-4 sm:px-6 lg:px-8 bg-white relative overflow-hidden">
+      <section id="standardized-framework" className="py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
         {/* Background decorations */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-[#008929]/3 to-transparent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-bl from-[#095520]/3 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-amber-500/5 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-bl from-blue-500/5 to-transparent rounded-full blur-3xl"></div>
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
             <div className="animate-slide-in-left" style={{ animationDelay: "0.2s" }}>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-8 text-balance leading-[1.1]">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-amber-300 to-blue-200 bg-clip-text text-transparent mb-8 text-balance leading-[1.1]">
                 Accelerate capital deployment with a standardized framework
               </h2>
 
-              <p className="text-xl text-slate-600 leading-relaxed font-light mb-8">
+              <p className="text-xl text-slate-300 leading-relaxed font-light mb-8">
                 RIAs face long approval cycles for unfamiliar investment products. Sylvan structures every investment
                 around existing income producing real estate held in ring fenced SPVs with predefined assets and cash
                 flows. Approve our framework once, then deploy capital into multiple assets without analysing a new
@@ -243,7 +243,7 @@ export default function HomePage() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-2 border-[#095520] text-[#095520] hover:bg-[#095520] hover:text-white text-lg px-8 py-6 transition-all duration-500 hover:scale-105 hover:shadow-2xl rounded-xl font-semibold group"
+                className="border-2 border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-slate-900 text-lg px-8 py-6 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/50 rounded-xl font-semibold group"
               >
                 <Link href="/listings" className="flex items-center gap-2">
                   View Current Listings
@@ -254,38 +254,38 @@ export default function HomePage() {
 
             {/* Right - Enhanced Structure Diagram */}
             <div className="animate-slide-in-right" style={{ animationDelay: "0.3s" }}>
-              <Card className="bg-gradient-to-br from-slate-50 to-white border-2 border-slate-200 p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group cursor-pointer">
-                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#008929]/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <Card className="bg-gradient-to-br from-slate-700 to-slate-800 border-2 border-amber-500/30 p-8 shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(217,119,6,0.3)] transition-all duration-500 hover:-translate-y-2 relative overflow-hidden group cursor-pointer">
+                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-amber-500/10 to-transparent rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <div className="text-center mb-8 relative z-10">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3">STRUCTURE</h3>
-                  <Badge variant="outline" className="border-emerald-500 text-emerald-700 animate-shimmer">
+                  <h3 className="text-2xl font-bold text-amber-300 mb-3">STRUCTURE</h3>
+                  <Badge variant="outline" className="border-amber-500 text-amber-400 animate-shimmer bg-amber-500/10">
                     BLUEPRINT
                   </Badge>
                 </div>
 
                 <div className="space-y-4 relative z-10">
                   {/* Senior Debt */}
-                  <div className="bg-blue-50 border-2 border-blue-200 rounded-xl p-5 relative hover:border-blue-300 hover:bg-blue-100/50 transition-all duration-300 group/item cursor-pointer">
+                  <div className="bg-blue-500/10 border-2 border-blue-400/40 rounded-xl p-5 relative hover:border-blue-400/60 hover:bg-blue-500/15 transition-all duration-300 group/item cursor-pointer">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-bold text-blue-900 uppercase">Senior Debt</span>
-                      <Badge className="bg-blue-600 hover:bg-blue-700 text-white">First Position</Badge>
+                      <span className="text-sm font-bold text-blue-300 uppercase">Senior Debt</span>
+                      <Badge className="bg-blue-500/50 hover:bg-blue-600/60 text-blue-100 border border-blue-400/50">First Position</Badge>
                     </div>
                     <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 z-20">
-                      <div className="w-10 h-10 bg-white border-2 border-slate-300 rounded-full flex items-center justify-center shadow-lg group-hover/item:shadow-xl transition-all duration-300">
-                        <ArrowRight className="w-6 h-6 text-slate-700 rotate-90" />
+                      <div className="w-10 h-10 bg-slate-800 border-2 border-slate-600 rounded-full flex items-center justify-center shadow-lg group-hover/item:shadow-xl transition-all duration-300">
+                        <ArrowRight className="w-6 h-6 text-slate-400 rotate-90" />
                       </div>
                     </div>
                   </div>
 
                   {/* Sylvan Note */}
-                  <div className="bg-emerald-50 border-2 border-emerald-400 rounded-xl p-5 relative mt-8 hover:border-emerald-500 hover:bg-emerald-100/50 transition-all duration-300 group/item cursor-pointer">
+                  <div className="bg-amber-500/10 border-2 border-amber-400/40 rounded-xl p-5 relative mt-8 hover:border-amber-400/60 hover:bg-amber-500/15 transition-all duration-300 group/item cursor-pointer">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm font-bold text-emerald-900 uppercase flex items-center gap-2">
+                      <span className="text-sm font-bold text-amber-300 uppercase flex items-center gap-2">
                         <CheckCircle className="w-5 h-5 animate-pulse" />
                         Sylvan Note
                       </span>
-                      <Badge className="bg-[#008929] hover:bg-[#095520] text-white font-semibold">12-14% Mezzanine</Badge>
+                      <Badge className="bg-amber-500/50 hover:bg-amber-600/60 text-amber-100 font-semibold border border-amber-400/50">12-14% Mezzanine</Badge>
                     </div>
                     <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 z-20">
                       <div className="w-10 h-10 bg-white border-2 border-slate-300 rounded-full flex items-center justify-center shadow-lg group-hover/item:shadow-xl transition-all duration-300">
@@ -318,11 +318,11 @@ export default function HomePage() {
       </section>
 
       {/* Section 3 - Lockbox Protected with Enhanced Visual */}
-      <section id="lockbox-protection" className="py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-slate-50 to-white relative overflow-hidden">
+      <section id="lockbox-protection" className="py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
         {/* Background decorations */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/2 left-0 w-96 h-96 bg-gradient-to-r from-[#095520]/3 to-transparent rounded-full blur-3xl transform -translate-y-1/2"></div>
-          <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-l from-[#008929]/3 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-0 w-96 h-96 bg-gradient-to-r from-amber-500/5 to-transparent rounded-full blur-3xl transform -translate-y-1/2"></div>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-l from-blue-500/5 to-transparent rounded-full blur-3xl"></div>
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
@@ -397,11 +397,11 @@ export default function HomePage() {
 
             {/* Right Content */}
             <div className="animate-slide-in-right" style={{ animationDelay: "0.3s" }}>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-8 text-balance leading-[1.1]">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-amber-300 to-blue-200 bg-clip-text text-transparent mb-8 text-balance leading-[1.1]">
                 Lockbox protected cash flows by design
               </h2>
 
-              <p className="text-xl text-slate-600 leading-relaxed font-light mb-8">
+              <p className="text-xl text-slate-300 leading-relaxed font-light mb-8">
                 With Sylvan, RIAs do not face uncertainty around cash flow control and capital priority. We enforce a
                 prioritized distribution waterfall where rental income flows to the bank and Sylvan investors before the
                 developer can access a single dollar. You gain the peace of mind that comes from a rigorous legal
@@ -412,7 +412,7 @@ export default function HomePage() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-2 border-[#095520] text-[#095520] hover:bg-[#095520] hover:text-white text-lg px-8 py-6 transition-all duration-500 hover:scale-105 hover:shadow-2xl rounded-xl font-semibold group"
+                className="border-2 border-amber-500 text-amber-400 hover:bg-amber-500 hover:text-slate-900 text-lg px-8 py-6 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-amber-500/50 rounded-xl font-semibold group"
               >
                 <Link href="/listings" className="flex items-center gap-2">
                   <span>View Current Listings</span>
@@ -425,22 +425,22 @@ export default function HomePage() {
       </section>
 
       {/* Section 4 - Established Rental Yields with Performance Chart */}
-      <section id="rental-yields" className="py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white via-slate-50 to-white relative overflow-hidden">
+      <section id="rental-yields" className="py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-800 to-slate-900 relative overflow-hidden">
         {/* Background decorations */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-0 right-1/4 w-96 h-96 bg-gradient-to-bl from-[#008929]/3 to-transparent rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-gradient-to-tr from-[#095520]/3 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-gradient-to-bl from-amber-500/5 to-transparent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-gradient-to-tr from-blue-500/5 to-transparent rounded-full blur-3xl"></div>
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
             <div className="animate-slide-in-left" style={{ animationDelay: "0.2s" }}>
-              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-8 text-balance leading-[1.1]">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-amber-300 to-blue-200 bg-clip-text text-transparent mb-8 text-balance leading-[1.1]">
                 Access established rental yields without ownership risk
               </h2>
 
-              <p className="text-xl text-slate-600 leading-relaxed font-light mb-10">
+              <p className="text-xl text-slate-300 leading-relaxed font-light mb-10">
                 RIAs can bypass the volatility of developer equity by participating in standardized debt issuance on
                 existing properties. You are buying into proven rental yields rather than betting on the operational
                 success of a developer. You get direct exposure to the performance of the real estate asset itself with a
@@ -462,7 +462,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 asChild
-                className="bg-gradient-to-br from-[#095520] to-[#008929] hover:from-[#008929] hover:to-[#095520] text-white text-lg px-8 py-6 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(0,137,41,0.4)] transition-all duration-500 hover:scale-110 font-semibold rounded-xl group relative overflow-hidden"
+                className="bg-gradient-to-br from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-900 text-lg px-8 py-6 shadow-2xl hover:shadow-[0_20px_60px_-15px_rgba(217,119,6,0.6)] transition-all duration-500 hover:scale-110 font-semibold rounded-xl group relative overflow-hidden"
               >
                 <Link href="/listings" className="flex items-center gap-2 relative">
                   <span>View Current Listings</span>
